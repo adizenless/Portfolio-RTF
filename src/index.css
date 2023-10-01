@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body,
+:root {
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .button {
+    @apply bg-green-500 px-10 py-2 text-sm font-bold rounded-md hover:scale-[1.01];
+  }
+}
+
+.animate {
+  animation: animate 2s infinite ease alternate;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
